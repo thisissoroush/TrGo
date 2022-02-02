@@ -1,0 +1,1429 @@
+<!doctype html>
+<html lang="fa">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link href="css/style.css" type="text/css" rel="stylesheet"/>
+    <link href="css/bootstrap-datepicker.css" type="text/css" rel="stylesheet"/>
+    <!-- Favicon -->
+    <!-- Favicon and Touch Icons -->
+    <link href="images/favicon.png" rel="shortcut icon" type="image/png">
+    <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="images/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+    <title>برو سفر</title>
+</head>
+<!-- =======================
+	header Start-->
+<body>
+<header class="header-static navbar-sticky navbar-light shadow">
+    <!-- Search -->
+    <div class="top-search collapse bg-light" id="search-open" data-parent="#search">
+        <div class="container">
+            <div class="row position-relative">
+                <div class="col-md-8 mx-auto py-5">
+                    <form>
+                        <div class="input-group">
+                            <input class="form-control border-radius-right-0 border-right-0" type="text" name="search"
+                                   autofocus="" placeholder="جستجو کردن">
+                            <button type="button" class="btn btn-grad border-radius-left-0 mb-0">جستجو کردن</button>
+                        </div>
+                    </form>
+                    <p class="small mt-2 mb-0"><strong>به عنوان مثال</strong> الگو ، برو سفر ، وردپرس</p>
+                </div>
+                <a class="position-absolute top-0 right-0 mt-3 mr-3" data-toggle="collapse" href="#search-open"><i
+                        class="fas fa-window-close"></i></a></div>
+        </div>
+    </div>
+    <!-- End Search -->
+
+    <!-- Navbar top start-->
+    <div class="navbar-top d-none d-lg-block">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <!-- navbar top Left-->
+                <div class="d-flex align-items-center">
+                    <!-- Language -->
+                    <div class="dropdown"><a class="dropdown-toggle" href="#" role="button" id="dropdownLanguage"
+                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img
+                            class="dropdown-item-icon" src="images/flag/uk.svg" alt=""> انگلیسی </a>
+                        <div class="dropdown-menu mt-2 shadow" aria-labelledby="dropdownLanguage"><span
+                                class="dropdown-item-text">زبان را انتخاب کنید</span>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"><img class="dropdown-item-icon" src="images/flag/sp.svg"
+                                                                   alt="">اسپانیایی </a> <a class="dropdown-item"
+                                                                                            href="#"><img
+                                    class="dropdown-item-icon" src="images/flag/fr.svg" alt="">فرانسه </a> <a
+                                    class="dropdown-item" href="#"><img class="dropdown-item-icon"
+                                                                        src="images/flag/gr.svg" alt="">آلمانی</a>
+                        </div>
+                    </div>
+                    <!-- Top info -->
+                    <ul class="nav list-unstyled ml-3">
+                        <li class="nav-item mr-3"><a class="navbar-link" href="#"><strong>تلفن:</strong>
+                            98-021345678</a>
+                        </li>
+                        <li class="nav-item mr-3"><a class="navbar-link" href="#"><strong>ایمیل:</strong>
+                            help@TravelGo.com</a></li>
+                    </ul>
+                </div>
+
+                <!-- navbar top Right-->
+                <div class="d-flex align-items-center">
+                    <!-- Top Account -->
+                    <div class="dropdown"><a class="dropdown-toggle" href="#" role="button" id="dropdownAccount"
+                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                            class="far fa-user mr-2"></i>حساب </a>
+                        <div class="dropdown-menu mt-2 shadow" aria-labelledby="dropdownAccount"><a
+                                class="dropdown-item" href="sign-in.html">ورود </a> <a class="dropdown-item"
+                                                                                       href="sign-up.html">ثبت نام </a>
+                            <a class="dropdown-item" href="#">تنظیمات</a></div>
+                    </div>
+                    <!-- top link -->
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link" href="#">تماس</a></li>
+                    </ul>
+                    <!-- top social -->
+                    <ul class="social-icons">
+                        <li class="social-icons-item social-facebook m-0"><a class="social-icons-link w-auto px-2"
+                                                                             href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="social-icons-item social-instagram m-0"><a class="social-icons-link w-auto px-2"
+                                                                              href="#"><i
+                                class="fab fa-twitter"></i></a></li>
+                        <li class="social-icons-item social-twitter m-0"><a class="social-icons-link w-auto pl-2"
+                                                                            href="#"><i
+                                class="fab fa-instagram"></i></a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar top End-->
+
+    <!-- Logo Nav Start -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html"> <img src="images/logo-header.png" alt="مسافرتی"> </a>
+            <!-- Menu opener button -->
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="ناوبری را تغییر دهید"><span
+                    class="navbar-toggler-icon"> </span></button>
+            <!-- Main Menu Start -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <!-- Menu item 1 Demos-->
+                    <li class="nav-item dropdown active"><a class="nav-link dropdown-toggle" href="#" id="demosMenu"
+                                                            data-toggle="dropdown" aria-haspopup="true"
+                                                            aria-expanded="false">خانه</a>
+                        <ul class="dropdown-menu" aria-labelledby="homeMenu">
+                            <li><a class="dropdown-item" href="index.html">طرح بندی خانه 1</a></li>
+                            <li><a class="dropdown-item" href="homepage2.html">طرح بندی خانه 2</a></li>
+                            <li><a class="dropdown-item" href="homepage3.html">چیدمان خانه 3</a></li>
+                            <li><a class="dropdown-item" href="homepage4.html">چیدمان خانه 4</a></li>
+                            <li><a class="dropdown-item" href="homepage5.html">طرح بندی خانه 5</a></li>
+                            <li><a class="dropdown-item" href="homepage6.html">چیدمان خانگی 6</a></li>
+                            <li class="dropdown-header">سبک هدر</li>
+                            <li><a class="dropdown-item" href="header-1.html">سبک هدر 1</a></li>
+                            <li><a class="dropdown-item" href="header-2.html">سبک هدر 2</a></li>
+                            <li><a class="dropdown-item" href="header-3.html">سبک هدر 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="docMenu"
+                                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">هتل
+                        ها</a>
+                        <ul class="dropdown-menu" aria-labelledby="docMenu">
+                            <li><a class="dropdown-item" href="hotel-index.html">هتل های خانگی</a></li>
+                            <li><a class="dropdown-item" href="hotel-list-view.html">نمایش لیست</a></li>
+                            <li><a class="dropdown-item" href="hotel-grid-view.html">نمایش هتل</a></li>
+                            <li><a class="dropdown-item" href="hotel-detailed.html">جزییات</a></li>
+                            <li><a class="dropdown-item" href="hotel-booking.html">رزرو</a></li>
+                            <li><a class="dropdown-item" href="hotel-thankyou.html">تایید</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="docMenu"
+                                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">پروازها</a>
+                        <ul class="dropdown-menu" aria-labelledby="docMenu">
+                            <li><a class="dropdown-item" href="flight-index.html">پروازهای خانگی</a></li>
+                            <li><a class="dropdown-item" href="flight-list-view.html">نمایش لیست</a></li>
+                            <li><a class="dropdown-item" href="flight-grid-view.html">نمایش پرواز</a></li>
+                            <li><a class="dropdown-item" href="flight-detailed.html">جزییات</a></li>
+                            <li><a class="dropdown-item" href="flight-booking.html">رزرو</a></li>
+                            <li><a class="dropdown-item" href="flight-thankyou.html">تایید</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="docMenu"
+                                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ماشین
+                        ها</a>
+                        <ul class="dropdown-menu" aria-labelledby="docMenu">
+                            <li><a class="dropdown-item" href="car-index.html">ماشینهای خانگی</a></li>
+                            <li><a class="dropdown-item" href="car-list-view.html">نمایش لیست</a></li>
+                            <li><a class="dropdown-item" href="car-grid-view.html">نمایش خودرو</a></li>
+                            <li><a class="dropdown-item" href="car-detailed.html">جزییات</a></li>
+                            <li><a class="dropdown-item" href="car-booking.html">رزرو</a></li>
+                            <li><a class="dropdown-item" href="car-thankyou.html">تایید</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="docMenu"
+                                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">سفرهای
+                        دریایی</a>
+                        <ul class="dropdown-menu" aria-labelledby="docMenu">
+                            <li><a class="dropdown-item" href="cruise-index.html">سفرهای دریایی</a></li>
+                            <li><a class="dropdown-item" href="cruise-list-view.html">نمایش لیست</a></li>
+                            <li><a class="dropdown-item" href="cruise-grid-view.html">نمایش </a></li>
+                            <li><a class="dropdown-item" href="cruise-detailed.html">جزییات</a></li>
+                            <li><a class="dropdown-item" href="cruise-booking.html">رزرو</a></li>
+                            <li><a class="dropdown-item" href="cruise-thankyou.html">تایید</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="docMenu"
+                                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">تور</a>
+                        <ul class="dropdown-menu" aria-labelledby="docMenu">
+                            <li><a class="dropdown-item" href="tour-index.html">تور </a></li>
+                            <li><a class="dropdown-item" href="all_tours_list.html">لیست همه تورها</a></li>
+                            <li><a class="dropdown-item" href="all_tours_grid.html">نمایش تورها</a></li>
+                            <li><a class="dropdown-item" href="single_tour.html">جزییات</a></li>
+                            <li><a class="dropdown-item" href="single_tour_with_gallery.html">تور با گالری</a></li>
+                            <li><a class="dropdown-item" href="payment.html">رزرو تور </a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Menu item 5 Elements-->
+                    <li class="nav-item dropdown megamenu"><a class="nav-link dropdown-toggle" href="#"
+                                                              id="elementsMenu" data-toggle="dropdown"
+                                                              aria-haspopup="true" aria-expanded="false">صفحات</a>
+                        <div class="dropdown-menu" aria-labelledby="elementsMenu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="pages-aboutus1.html">درباره ما</a></li>
+                                            <li><a class="dropdown-item" href="pages-services1.html">خدمات</a></li>
+                                            <li><a class="dropdown-item" href="pages-photogallery-4column.html">گالری 4
+                                                ستون</a></li>
+                                            <li><a class="dropdown-item" href="pages-photogallery-3column.html">گالری 3
+                                                ستون</a></li>
+                                            <li><a class="dropdown-item" href="pages-photogallery-2column.html">گالری 2
+                                                ستون</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="pages-faq1.html">پرسش پاسخ</a></li>
+                                            <li><a class="dropdown-item" href="pages-404-1.html">صفحه 404</a></li>
+                                            <li><a class="dropdown-item" href="pages-coming-soon1.html">به زودی</a></li>
+                                            <li><a class="dropdown-item" href="pages-login1.html">ورود </a></li>
+                                            <li><a class="dropdown-item" href="pages-register.html">ثبت نام</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="pages-layouts-twosidebar.html">طرح بندی
+                                                دو نوار کناری</a></li>
+                                            <li><a class="dropdown-item" href="pages-layouts-fullwidth.html">عرض
+                                                کامل</a></li>
+                                            <li><a class="dropdown-item" href="#">تماس با ما</a></li>
+                                            <li><a class="dropdown-item" href="pages-travelo-policies.html">سیاست
+                                                ها</a></li>
+                                            <li><a class="dropdown-item" href="pages-sitemap.html">نقشه سایت</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="pages-blog-rightsidebar.html">وبلاگ سمت
+                                                راست نوار</a></li>
+                                            <li><a class="dropdown-item" href="pages-blog-leftsidebar.html">وبلاگ سمت
+                                                چپ</a></li>
+                                            <li><a class="dropdown-item" href="pages-blog-fullwidth.html">وبلاگ عرض
+                                                کامل </a></li>
+                                            <li><a class="dropdown-item" href="pages-blog-read.html">جزئیات وبلاگ</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Menu item 6 Docs-->
+
+                    <!-- Menu item 5 Elements-->
+                    <li class="nav-item dropdown megamenu"><a class="nav-link dropdown-toggle" href="#"
+                                                              id="elementsMenu" data-toggle="dropdown"
+                                                              aria-haspopup="true" aria-expanded="false">عناصر</a>
+                        <div class="dropdown-menu" aria-labelledby="elementsMenu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="elements-accordion.html">آکاردئون</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="elements-action-box.html">جعبه عمل</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="elements-alerts.html">هشدارها</a></li>
+                                            <li><a class="dropdown-item" href="elements-animated-headlines.html">عناوین
+                                                متحرک</a></li>
+                                            <li><a class="dropdown-item" href="elements-blockquote.html">بلوکوت</a></li>
+                                            <li><a class="dropdown-item" href="elements-buttons.html">دکمه ها</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="elements-clients.html">مشتری</a></li>
+                                            <li><a class="dropdown-item" href="elements-counter.html">شمارنده</a></li>
+                                            <li><a class="dropdown-item" href="elements-divider.html">تقسیم کننده</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="elements-feature-box.html">جعبه ویژگی</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="elements-forms.html">فرم</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="elements-grid.html">گرید</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="elements-list-styles.html">سبک های
+                                                لیست</a></li>
+                                            <li><a class="dropdown-item" href="elements-map.html">نقشه</a></li>
+                                            <li><a class="dropdown-item" href="elements-modal.html">مودال</a></li>
+                                            <li><a class="dropdown-item" href="elements-skill.html">نوار وضعیت</a></li>
+                                            <li><a class="dropdown-item" href="elements-social-icon.html">نماد
+                                                اجتماعی</a></li>
+                                            <li><a class="dropdown-item" href="elements-tab.html">تب ها</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-3">
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="elements-table.html">جدول</a></li>
+                                            <li><a class="dropdown-item" href="elements-team.html">تیم ما</a></li>
+                                            <li><a class="dropdown-item" href="elements-typography.html">تایپوگرافی</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="elements-video.html">فیلم</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Menu item 6 Docs-->
+
+                </ul>
+            </div>
+            <!-- Main Menu End -->
+            <!-- Header Extras Start-->
+            <div class="navbar-nav">
+                <!-- extra item Search-->
+                <div class="nav-item search border-0 pl-3 pr-0 px-lg-2" id="search"><a class="nav-link"
+                                                                                       data-toggle="collapse"
+                                                                                       href="#search-open"><i
+                        class="fas fa-search"></i></a></div>
+                <!-- extra item Btn-->
+                <div class="nav-item border-0 d-none d-lg-inline-block align-self-center"><a href="#"
+                                                                                             class=" btn btn-sm btn-grad text-white mb-0">رزرو
+                    آنلاین</a></div>
+            </div>
+            <!-- Header Extras End-->
+        </div>
+    </nav>
+    <!-- Logo Nav End -->
+</header>
+<!-- =======================
+	header End-->
+<!-- =======================
+	Main Banner -->
+<section class="p-0 height-700 parallax-bg"
+         style="background:url(images/banner/03.jpg) no-repeat 65% 0%; background-size:cover;">
+    <div class="container h-100">
+        <div class="row justify-content-between align-items-center h-100">
+            <div class="col-md-8 mb-7">
+                <h4>چاپ و با استفاده از طراحان گرافیک است</h4>
+                <h1 class="display-4 font-weight-bold">چاپ و با استفاده از طراحان گرافیک است</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- =======================
+	Main banner -->
+
+<section class="mt-lg-n9 mt-sm-0 pb-0 z-index-9 booking-search">
+    <div class="container ">
+        <div class="row shadow border-radius-3">
+            <div class="col-md-12 np">
+                <div class="feature-box h-100">
+                    <div class="tab_container">
+                        <input id="tab1" type="radio" name="tabs" checked="">
+                        <label for="tab1"><i class="fas fa-utensils"></i><span>هتل ها</span></label>
+                        <input id="tab2" type="radio" name="tabs">
+                        <label for="tab2"><i class="fas fa-helicopter"></i><span>پروازها</span></label>
+                        <input id="tab3" type="radio" name="tabs">
+                        <label for="tab3"><i class="fas fa-car-side"></i><span>ماشین ها</span></label>
+                        <input id="tab4" type="radio" name="tabs">
+                        <label for="tab4"><i class="fas fa-ship"></i><span>سفرهای دریایی</span></label>
+                        <input id="tab5" type="radio" name="tabs">
+                        <label for="tab5"><i class="fas fa-route"></i><span>تورها</span></label>
+                        <section id="content1" class="tab-content">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 padding8">
+                                    <div class="form-group"><span class="fas fa-map-marker-alt"></span>
+                                        <input class="form-control" type="text"
+                                               placeholder="انتخاب کنید">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
+                                    <div class="form-group"><span class="far fa-calendar-alt"></span>
+                                        <input class="form-control" type="text" id="date-picker" autocomplete="off"
+                                               placeholder="تاریخ ورود">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
+                                    <div class="form-group"><span class="far fa-calendar-alt"></span>
+                                        <input class="form-control" type="text" id="date-picker-out" autocomplete="off"
+                                               placeholder="تاریخ خروج">
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-md-6 col-sm-6 col-xs-12 padding8">
+                                    <div class="form-group">
+                                        <select class="custom-select select-big">
+                                            <option selected="">اتاقها</option>
+                                            <option value="location1">01</option>
+                                            <option value="location2">02</option>
+                                            <option value="location3">03</option>
+                                            <option value="location4">04</option>
+                                            <option value="location5">05</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-md-6 col-sm-6 col-xs-12 padding8">
+                                    <div class="form-group">
+                                        <select class="custom-select select-big">
+                                            <option selected="">مهمان</option>
+                                            <option value="location1">01</option>
+                                            <option value="location2">02</option>
+                                            <option value="location3">03</option>
+                                            <option value="location4">04</option>
+                                            <option value="location5">05</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
+                                    <div class="form-group">
+                                        <button class="btn btn-primary btn-lg btn-grad" type="submit">جستجو کردن
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="content2" class="tab-content">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 padding8">
+                                    <div class="form-group"><span class="fas fa-map-marker-alt"></span>
+                                        <input class="form-control" type="text"
+                                               placeholder="مبدا">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 padding8">
+                                    <div class="form-group"><span class="fas fa-map-marker-alt"></span>
+                                        <input class="form-control" type="text"
+                                               placeholder="مقصد">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
+                                    <div class="form-group"><span class="far fa-calendar-alt"></span>
+                                        <input class="form-control" type="text" id="date-picker-1" autocomplete="off"
+                                               placeholder="تاریخ ورود">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
+                                    <div class="form-group"><span class="far fa-calendar-alt"></span>
+                                        <input class="form-control" type="text" id="date-picker-2" autocomplete="off"
+                                               placeholder="تاریخ خروج">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
+                                    <div class="form-group">
+                                        <button class="btn btn-primary btn-lg btn-grad" type="submit">جستجو کردن
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="content3" class="tab-content">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 padding8">
+                                    <div class="form-group"><span class="fas fa-map-marker-alt"></span>
+                                        <input class="form-control" type="text" placeholder="محل حرکت">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 padding8">
+                                    <div class="form-group"><span class="fas fa-map-marker-alt"></span>
+                                        <input class="form-control" type="text" placeholder="محل توقف">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
+                                    <div class="form-group"><span class="far fa-calendar-alt"></span>
+                                        <input class="form-control" type="text" id="date-picker-3" autocomplete="off"
+                                               placeholder="تاریخ حرکت">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
+                                    <div class="form-group"><span class="far fa-calendar-alt"></span>
+                                        <input class="form-control" type="text" id="date-picker-4" autocomplete="off"
+                                               placeholder="تاریخ توقف">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
+                                    <div class="form-group">
+                                        <button class="btn btn-primary btn-lg btn-grad" type="submit">جستجو کردن
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="content4" class="tab-content">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 padding8">
+                                    <div class="form-group"><span class="fas fa-map-marker-alt"></span>
+                                        <input class="form-control" type="text"
+                                               placeholder="انتخاب کنید">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
+                                    <div class="form-group"><span class="far fa-calendar-alt"></span>
+                                        <input class="form-control" type="text" id="date-picker-5" autocomplete="off"
+                                               placeholder="تاریخ عزیمت">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
+                                    <div class="form-group">
+                                        <select class="custom-select select-big">
+                                            <option selected="">طول کروز</option>
+                                            <option value="location1">1-2 شب</option>
+                                            <option value="location2">2-3 شب</option>
+                                            <option value="location3">شب 3-4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
+                                    <div class="form-group">
+                                        <select class="custom-select select-big">
+                                            <option selected="">خط کروز</option>
+                                            <option value="location1">Cruises Club Azamara</option>
+                                            <option value="location2">سفرهای مشهور</option>
+                                            <option value="location3">کروز و دریایی</option>
+                                            <option value="location4">سفرهای دریایی اقیانوسیه</option>
+                                            <option value="location5">سفرهای پیتر دیلمان</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
+                                    <div class="form-group">
+                                        <button class="btn btn-primary btn-lg btn-grad" type="submit">جستجو کردن
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="content5" class="tab-content">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 padding8">
+                                    <div class="form-group"><span class="fas fa-map-marker-alt"></span>
+                                        <input class="form-control" type="text"
+                                               placeholder="مبدا">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 padding8">
+                                    <div class="form-group"><span class="fas fa-map-marker-alt"></span>
+                                        <input class="form-control" type="text"
+                                               placeholder="مقصد">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
+                                    <div class="form-group"><span class="far fa-calendar-alt"></span>
+                                        <input class="form-control" type="text" id="date-picker-6" autocomplete="off"
+                                               placeholder="تاریخ ورود">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
+                                    <div class="form-group"><span class="far fa-calendar-alt"></span>
+                                        <input class="form-control" type="text" id="date-picker-7" autocomplete="off"
+                                               placeholder="تاریخ خروج">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
+                                    <div class="form-group">
+                                        <button class="btn btn-primary btn-lg btn-grad" type="submit">جستجو کردن
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <p></p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="Categories pt80 pb60">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-8">
+                <p class="subtitle text-secondary nopadding">بیشترین تعداد سرمایه ها</p>
+                <h1 class="paddtop1 font-weight lspace-sm">مقصد محبوب</h1>
+            </div>
+            <div class="col-md-4 d-lg-flex align-items-center justify-content-end"><a href="#"
+                                                                                      class="blist text-sm ml-2"> همه
+                شهرها را ببینید<i class="fas fa-angle-double-left ml-2"></i></a></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6"><a href="#">
+                <div class="list-mig-like-com">
+                    <div class="list-mig-lc-img"><img src="images/tour/home.jpg" alt=""></div>
+                    <div class="list-mig-lc-con">
+                        <h5>ایالات متحده</h5>
+                        <p>81 شهر </p>
+                    </div>
+                </div>
+            </a></div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6"><a href="#">
+                        <div class="list-mig-like-com">
+                            <div class="list-mig-lc-img"><img src="images/tour/home2.jpg" alt=""></div>
+                            <div class="list-mig-lc-con list-mig-lc-con2">
+                                <h5>انگلستان</h5>
+                                <p>81 شهر </p>
+                            </div>
+                        </div>
+                    </a></div>
+                    <div class="col-md-6"><a href="#">
+                        <div class="list-mig-like-com">
+                            <div class="list-mig-lc-img"><img src="images/tour/home3.jpg" alt=""></div>
+                            <div class="list-mig-lc-con list-mig-lc-con2">
+                                <h5>استرالیا</h5>
+                                <p>81 شهر </p>
+                            </div>
+                        </div>
+                    </a></div>
+                    <div class="col-md-6"><a href="#">
+                        <div class="list-mig-like-com">
+                            <div class="list-mig-lc-img"><img src="images/tour/home4.jpg" alt=""></div>
+                            <div class="list-mig-lc-con list-mig-lc-con2">
+                                <h5>آلمان</h5>
+                                <p>81 شهر </p>
+                            </div>
+                        </div>
+                    </a></div>
+                    <div class="col-md-6"><a href="#">
+                        <div class="list-mig-like-com">
+                            <div class="list-mig-lc-img"><img src="images/tour/home1.jpg" alt=""></div>
+                            <div class="list-mig-lc-con list-mig-lc-con2">
+                                <h5>هند</h5>
+                                <p>81 شهر </p>
+                            </div>
+                        </div>
+                    </a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="grayBG pt80 pb80">
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-8 mx-auto text-center mb-5">
+                <h2 class="title text-center">خدمات ما</h2>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="feature-box h-100 text-center px-4 py-5">
+                    <div class="feature-box-icon"><img class="w-25" src="images/tour/check-mark.svg" alt=""></div>
+                    <h3 class="feature-box-title">رزرو هتل</h3>
+                    <p class="feature-box-desc">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box h-100 text-center all-text-white bg-grad px-4 py-5 border-radius-3">
+                    <div class="feature-box-icon"><img class="w-25" src="images/tour/editor.svg" alt=""></div>
+                    <h3 class="feature-box-title">رزرو بلیط</h3>
+                    <p class="feature-box-desc">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box h-100 text-center px-4 py-5">
+                    <div class="feature-box-icon"><img class="w-25" src="images/tour/envelope.svg" alt=""></div>
+                    <h3 class="feature-box-title">تور شگفت انگیز</h3>
+                    <p class="feature-box-desc">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="Categories pt80 pb60 ">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-8">
+                <p class="subtitle text-secondary nopadding">مانند محلی بمانید و بخورید</p>
+                <h1 class="paddtop1 font-weight lspace-sm">هتل های معروف</h1>
+            </div>
+            <div class="col-md-4 d-lg-flex align-items-center justify-content-end"><a href="#"
+                                                                                      class="blist text-sm ml-2"> مشاهده
+                همه هتل ها<i class="fas fa-angle-double-left ml-2"></i></a></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                <div class="listroBox">
+                    <figure><a href="hotel-detailed.html" class="wishlist_bt"></a> <a href="hotel-detailed.html"><img
+                            src="images/hotels/room5.jpg" class="img-fluid" alt="">
+                        <div class="read_more"><span>بیشتر بخوانید</span></div>
+                    </a></figure>
+                    <div class="listroBoxmain">
+                        <h3><a href="hotel-detailed.html">اتاق مدرن و مرتب</a></h3>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                            است.</p>
+                        <a class="address" href="#">دریافت جهات</a></div>
+                    <ul>
+                        <li>
+                            <p class="card-text text-muted"><span class="h4 text-primary">80 تومان</span> در شب</p>
+                        </li>
+                        <li>
+                            <div class="R_retings">
+                                <div class="list-rat-ch list-room-rati"><i class="fa fa-star" aria-hidden="true"></i> <i
+                                        class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star"
+                                                                                      aria-hidden="true"></i> <i
+                                        class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star"
+                                                                                      aria-hidden="true"></i></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                <div class="listroBox">
+                    <figure><a href="hotel-detailed.html" class="wishlist_bt"></a> <a href="hotel-detailed.html"><img
+                            src="images/hotels/room1.jpg" class="img-fluid" alt="">
+                        <div class="read_more"><span>بیشتر بخوانید</span></div>
+                    </a></figure>
+                    <div class="listroBoxmain">
+                        <h3><a href="hotel-detailed.html">اتاق مدرن و مرتب</a></h3>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                            است.</p>
+                        <a class="address" href="#">دریافت جهات</a></div>
+                    <ul>
+                        <li>
+                            <p class="card-text text-muted"><span class="h4 text-primary">80 تومان</span> در شب</p>
+                        </li>
+                        <li>
+                            <div class="R_retings">
+                                <div class="list-rat-ch list-room-rati"><i class="fa fa-star" aria-hidden="true"></i> <i
+                                        class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star"
+                                                                                      aria-hidden="true"></i> <i
+                                        class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star"
+                                                                                      aria-hidden="true"></i></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                <div class="listroBox">
+                    <figure><a href="hotel-detailed.html" class="wishlist_bt"></a> <a href="hotel-detailed.html"><img
+                            src="images/hotels/room2.jpg" class="img-fluid" alt="">
+                        <div class="read_more"><span>بیشتر بخوانید</span></div>
+                    </a></figure>
+                    <div class="listroBoxmain">
+                        <h3><a href="hotel-detailed.html">اتاق مدرن و مرتب</a></h3>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                            است.</p>
+                        <a class="address" href="#">دریافت جهات</a></div>
+                    <ul>
+                        <li>
+                            <p class="card-text text-muted"><span class="h4 text-primary">80 تومان</span> در شب</p>
+                        </li>
+                        <li>
+                            <div class="R_retings">
+                                <div class="list-rat-ch list-room-rati"><i class="fa fa-star" aria-hidden="true"></i> <i
+                                        class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star"
+                                                                                      aria-hidden="true"></i> <i
+                                        class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star"
+                                                                                      aria-hidden="true"></i></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                <div class="listroBox">
+                    <figure><a href="hotel-detailed.html" class="wishlist_bt"></a> <a href="hotel-detailed.html"><img
+                            src="images/hotels/room7.jpg" class="img-fluid" alt="">
+                        <div class="read_more"><span>بیشتر بخوانید</span></div>
+                    </a></figure>
+                    <div class="listroBoxmain">
+                        <h3><a href="hotel-detailed.html">اتاق مدرن و مرتب</a></h3>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                            است.</p>
+                        <a class="address" href="#">دریافت جهات</a></div>
+                    <ul>
+                        <li>
+                            <p class="card-text text-muted"><span class="h4 text-primary">80 تومان</span> در شب</p>
+                        </li>
+                        <li>
+                            <div class="R_retings">
+                                <div class="list-rat-ch list-room-rati"><i class="fa fa-star" aria-hidden="true"></i> <i
+                                        class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star"
+                                                                                      aria-hidden="true"></i> <i
+                                        class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star"
+                                                                                      aria-hidden="true"></i></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                <div class="listroBox">
+                    <figure><a href="hotel-detailed.html" class="wishlist_bt"></a> <a href="hotel-detailed.html"><img
+                            src="images/hotels/room8.jpg" class="img-fluid" alt="">
+                        <div class="read_more"><span>بیشتر بخوانید</span></div>
+                    </a></figure>
+                    <div class="listroBoxmain">
+                        <h3><a href="hotel-detailed.html">اتاق مدرن و مرتب</a></h3>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                            است.</p>
+                        <a class="address" href="#">دریافت جهات</a></div>
+                    <ul>
+                        <li>
+                            <p class="card-text text-muted"><span class="h4 text-primary">80 تومان</span> در شب</p>
+                        </li>
+                        <li>
+                            <div class="R_retings">
+                                <div class="list-rat-ch list-room-rati"><i class="fa fa-star" aria-hidden="true"></i> <i
+                                        class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star"
+                                                                                      aria-hidden="true"></i> <i
+                                        class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star"
+                                                                                      aria-hidden="true"></i></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                <div class="listroBox">
+                    <figure><a href="hotel-detailed.html" class="wishlist_bt"></a> <a href="hotel-detailed.html"><img
+                            src="images/hotels/room6.jpg" class="img-fluid" alt="">
+                        <div class="read_more"><span>بیشتر بخوانید</span></div>
+                    </a></figure>
+                    <div class="listroBoxmain">
+                        <h3><a href="hotel-detailed.html">اتاق مدرن و مرتب</a></h3>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                            است.</p>
+                        <a class="address" href="#">دریافت جهات</a></div>
+                    <ul>
+                        <li>
+                            <p class="card-text text-muted"><span class="h4 text-primary">80 تومان</span> در شب</p>
+                        </li>
+                        <li>
+                            <div class="R_retings">
+                                <div class="list-rat-ch list-room-rati"><i class="fa fa-star" aria-hidden="true"></i> <i
+                                        class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star"
+                                                                                      aria-hidden="true"></i> <i
+                                        class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star"
+                                                                                      aria-hidden="true"></i></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =======================
+	service -->
+<section class="service pt80 pb80 service-home">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-8 mx-auto">
+                <div class="title text-center">
+                    <h2>میدونی؟</h2>
+                    <p class="mb-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mt-30">
+                <div class="featureBox icon-grad h-100">
+                    <div class="feature-box-icon"><i class="fas fa-route"></i></div>
+                    <h3 class="feature-box-title">بهترین نماینده مسافرتی</h3>
+                    <p class="feature-box-desc">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                    <a class="mt-3" href="#">بیشتر ببین!</a></div>
+            </div>
+            <div class="col-md-4 mt-30">
+                <div class="featureBox icon-grad h-100">
+                    <div class="feature-box-icon"><i class="fab fa-avianex"></i></div>
+                    <h3 class="feature-box-title">اعتماد و ایمنی</h3>
+                    <p class="feature-box-desc">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                    <a class="mt-3" href="#">بیشتر ببین!</a></div>
+            </div>
+            <div class="col-md-4 mt-30">
+                <div class="featureBox icon-grad h-100">
+                    <div class="feature-box-icon"><i class="fas fa-bullhorn"></i></div>
+                    <h3 class="feature-box-title">ضمانت بهترین قیمت</h3>
+                    <p class="feature-box-desc">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                    <a class="mt-3" href="#">بیشتر ببین!</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- =======================
+	service -->
+
+<section class="Categories pt80 pb60 Categories-home">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-8">
+                <p class="subtitle text-secondary nopadding">مانند محلی بمانید و بخورید</p>
+                <h1 class="paddtop1 font-weight lspace-sm">آخرین سفرهای دریایی</h1>
+            </div>
+            <div class="col-md-4 d-lg-flex align-items-center justify-content-end"><a href="#"
+                                                                                      class="blist text-sm ml-2"> مشاهده
+                همه سفرهای دریایی<i class="fas fa-angle-double-left ml-2"></i></a></div>
+        </div>
+        <div class="row">
+            <div class="swiper-container guides-slider-home-cruises">
+                <!-- Additional required wrapper-->
+                <div class="swiper-wrapper">
+                    <!-- Slides-->
+
+                    <div class="swiper-slide h-auto px-2">
+                        <div class="listing-item ">
+                            <article class="TravelGo-category-listing fl-wrap">
+                                <div class="TravelGo-category-img"><a href="hotel-detailed.html"><img
+                                        src="images/cruises/1.jpg" alt=""></a>
+                                    <div class="TravelGo-category-opt">
+                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="5"><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i></div>
+                                        <div class="rate-class-name">
+                                            <div class="score"><strong>بسیار خوب</strong> 27 بررسی</div>
+                                            <span>5.0</span></div>
+                                    </div>
+                                </div>
+                                <div class="TravelGo-category-content fl-wrap title-sin_item">
+                                    <div class="TravelGo-category-content-title fl-wrap">
+                                        <div class="TravelGo-category-content-title-item">
+                                            <h3 class="title-sin_map"><a href="hotel-detailed.html">کروز آسیا و
+                                                آفریقا</a></h3>
+                                            <div class="TravelGo-category-location fl-wrap"><a href="#"
+                                                                                               class="map-item"><i
+                                                    class="fas fa-map-marker-alt"></i>بیست و هفتم بروکلین نیویورک ، </a>
+                                                <span>200 تومان </span><a href="#"
+                                                                         class="map-item">آمریکا</a><span></span></div>
+                                        </div>
+                                    </div>
+                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                    <ul class="facilities-list fl-wrap">
+                                        <li><i class="fas fa-wifi"></i><span>وای فای رایگان</span></li>
+                                        <li><i class="fas fa-parking"></i><span>پارکینگ</span></li>
+                                        <li><i class="fas fa-smoking-ban"></i><span>اتاقهای غیر سیگاری</span></li>
+                                        <li><i class="fas fa-utensils"></i><span> رستوران</span></li>
+                                    </ul>
+                                    <div class="TravelGo-category-footer fl-wrap">
+                                        <div class="TravelGo-category-price btn-grad"><span>2 روز 3 شب</span></div>
+                                        <div class="TravelGo-opt-list"><a href="#" class="single-map-item"><i
+                                                class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">روی نقشه</span></a>
+                                            <a href="#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span
+                                                    class="TravelGo-opt-tooltip">صرفه جویی</span></a> <a href="#"
+                                                                                                         class="TravelGo-js-booking"><i
+                                                    class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">مسیرها را پیدا کنید</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="swiper-slide h-auto px-2">
+                        <div class="listing-item ">
+                            <article class="TravelGo-category-listing fl-wrap">
+                                <div class="TravelGo-category-img"><a href="hotel-detailed.html"><img
+                                        src="images/cruises/2.jpg" alt=""></a>
+                                    <div class="TravelGo-category-opt">
+                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="5"><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i></div>
+                                        <div class="rate-class-name">
+                                            <div class="score"><strong>بسیار خوب</strong> 27 بررسی</div>
+                                            <span>5.0</span></div>
+                                    </div>
+                                </div>
+                                <div class="TravelGo-category-content fl-wrap title-sin_item">
+                                    <div class="TravelGo-category-content-title fl-wrap">
+                                        <div class="TravelGo-category-content-title-item">
+                                            <h3 class="title-sin_map"><a href="hotel-detailed.html">کروز آسیا و
+                                                آفریقا</a></h3>
+                                            <div class="TravelGo-category-location fl-wrap"><a href="#"
+                                                                                               class="map-item"><i
+                                                    class="fas fa-map-marker-alt"></i>بیست و هفتم بروکلین نیویورک ، </a>
+                                                <span>200 تومان </span><a href="#"
+                                                                         class="map-item">آمریکا</a><span></span></div>
+                                        </div>
+                                    </div>
+                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                    <ul class="facilities-list fl-wrap">
+                                        <li><i class="fas fa-wifi"></i><span>وای فای رایگان</span></li>
+                                        <li><i class="fas fa-parking"></i><span>پارکینگ</span></li>
+                                        <li><i class="fas fa-smoking-ban"></i><span>اتاقهای غیر سیگاری</span></li>
+                                        <li><i class="fas fa-utensils"></i><span> رستوران</span></li>
+                                    </ul>
+                                    <div class="TravelGo-category-footer fl-wrap">
+                                        <div class="TravelGo-category-price btn-grad"><span>2 روز 3 شب</span></div>
+                                        <div class="TravelGo-opt-list"><a href="#" class="single-map-item"><i
+                                                class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">روی نقشه</span></a>
+                                            <a href="#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span
+                                                    class="TravelGo-opt-tooltip">صرفه جویی</span></a> <a href="#"
+                                                                                                         class="TravelGo-js-booking"><i
+                                                    class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">مسیرها را پیدا کنید</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="swiper-slide h-auto px-2">
+                        <div class="listing-item ">
+                            <article class="TravelGo-category-listing fl-wrap">
+                                <div class="TravelGo-category-img"><a href="hotel-detailed.html"><img
+                                        src="images/cruises/3.jpg" alt=""></a>
+                                    <div class="TravelGo-category-opt">
+                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="5"><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i></div>
+                                        <div class="rate-class-name">
+                                            <div class="score"><strong>بسیار خوب</strong> 27 بررسی</div>
+                                            <span>5.0</span></div>
+                                    </div>
+                                </div>
+                                <div class="TravelGo-category-content fl-wrap title-sin_item">
+                                    <div class="TravelGo-category-content-title fl-wrap">
+                                        <div class="TravelGo-category-content-title-item">
+                                            <h3 class="title-sin_map"><a href="hotel-detailed.html">کروز آسیا و
+                                                آفریقا</a></h3>
+                                            <div class="TravelGo-category-location fl-wrap"><a href="#"
+                                                                                               class="map-item"><i
+                                                    class="fas fa-map-marker-alt"></i>بیست و هفتم بروکلین نیویورک ، </a>
+                                                <span>200 تومان </span><a href="#"
+                                                                         class="map-item">آمریکا</a><span></span></div>
+                                        </div>
+                                    </div>
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                                    <ul class="facilities-list fl-wrap">
+                                        <li><i class="fas fa-wifi"></i><span>وای فای رایگان</span></li>
+                                        <li><i class="fas fa-parking"></i><span>پارکینگ</span></li>
+                                        <li><i class="fas fa-smoking-ban"></i><span>اتاقهای غیر سیگاری</span></li>
+                                        <li><i class="fas fa-utensils"></i><span> رستوران</span></li>
+                                    </ul>
+                                    <div class="TravelGo-category-footer fl-wrap">
+                                        <div class="TravelGo-category-price btn-grad"><span>2 روز 3 شب</span></div>
+                                        <div class="TravelGo-opt-list"><a href="#" class="single-map-item"><i
+                                                class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">روی نقشه</span></a>
+                                            <a href="#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span
+                                                    class="TravelGo-opt-tooltip">صرفه جویی</span></a> <a href="#"
+                                                                                                         class="TravelGo-js-booking"><i
+                                                    class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">مسیرها را پیدا کنید</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="swiper-slide h-auto px-2">
+                        <div class="listing-item ">
+                            <article class="TravelGo-category-listing fl-wrap">
+                                <div class="TravelGo-category-img"><a href="hotel-detailed.html"><img
+                                        src="images/cruises/4.jpg" alt=""></a>
+                                    <div class="TravelGo-category-opt">
+                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="5"><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i></div>
+                                        <div class="rate-class-name">
+                                            <div class="score"><strong>بسیار خوب</strong> 27 بررسی</div>
+                                            <span>5.0</span></div>
+                                    </div>
+                                </div>
+                                <div class="TravelGo-category-content fl-wrap title-sin_item">
+                                    <div class="TravelGo-category-content-title fl-wrap">
+                                        <div class="TravelGo-category-content-title-item">
+                                            <h3 class="title-sin_map"><a href="hotel-detailed.html">کروز آسیا و
+                                                آفریقا</a></h3>
+                                            <div class="TravelGo-category-location fl-wrap"><a href="#"
+                                                                                               class="map-item"><i
+                                                    class="fas fa-map-marker-alt"></i>بیست و هفتم بروکلین نیویورک ، </a>
+                                                <span>200 تومان </span><a href="#"
+                                                                         class="map-item">آمریکا</a><span></span></div>
+                                        </div>
+                                    </div>
+                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                    <ul class="facilities-list fl-wrap">
+                                        <li><i class="fas fa-wifi"></i><span>وای فای رایگان</span></li>
+                                        <li><i class="fas fa-parking"></i><span>پارکینگ</span></li>
+                                        <li><i class="fas fa-smoking-ban"></i><span>اتاقهای غیر سیگاری</span></li>
+                                        <li><i class="fas fa-utensils"></i><span> رستوران</span></li>
+                                    </ul>
+                                    <div class="TravelGo-category-footer fl-wrap">
+                                        <div class="TravelGo-category-price btn-grad"><span>2 روز 3 شب</span></div>
+                                        <div class="TravelGo-opt-list"><a href="#" class="single-map-item"><i
+                                                class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">روی نقشه</span></a>
+                                            <a href="#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span
+                                                    class="TravelGo-opt-tooltip">صرفه جویی</span></a> <a href="#"
+                                                                                                         class="TravelGo-js-booking"><i
+                                                    class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">مسیرها را پیدا کنید</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="swiper-slide h-auto px-2">
+                        <div class="listing-item ">
+                            <article class="TravelGo-category-listing fl-wrap">
+                                <div class="TravelGo-category-img"><a href="hotel-detailed.html"><img
+                                        src="images/cruises/5.jpg" alt=""></a>
+                                    <div class="TravelGo-category-opt">
+                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="5"><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i></div>
+                                        <div class="rate-class-name">
+                                            <div class="score"><strong>بسیار خوب</strong> 27 بررسی</div>
+                                            <span>5.0</span></div>
+                                    </div>
+                                </div>
+                                <div class="TravelGo-category-content fl-wrap title-sin_item">
+                                    <div class="TravelGo-category-content-title fl-wrap">
+                                        <div class="TravelGo-category-content-title-item">
+                                            <h3 class="title-sin_map"><a href="hotel-detailed.html">کروز آسیا و
+                                                آفریقا</a></h3>
+                                            <div class="TravelGo-category-location fl-wrap"><a href="#"
+                                                                                               class="map-item"><i
+                                                    class="fas fa-map-marker-alt"></i>بیست و هفتم بروکلین نیویورک ، </a>
+                                                <span>200 تومان </span><a href="#"
+                                                                         class="map-item">آمریکا</a><span></span></div>
+                                        </div>
+                                    </div>
+                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                    <ul class="facilities-list fl-wrap">
+                                        <li><i class="fas fa-wifi"></i><span>وای فای رایگان</span></li>
+                                        <li><i class="fas fa-parking"></i><span>پارکینگ</span></li>
+                                        <li><i class="fas fa-smoking-ban"></i><span>اتاقهای غیر سیگاری</span></li>
+                                        <li><i class="fas fa-utensils"></i><span> رستوران</span></li>
+                                    </ul>
+                                    <div class="TravelGo-category-footer fl-wrap">
+                                        <div class="TravelGo-category-price btn-grad"><span>2 روز 3 شب</span></div>
+                                        <div class="TravelGo-opt-list"><a href="#" class="single-map-item"><i
+                                                class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">روی نقشه</span></a>
+                                            <a href="#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span
+                                                    class="TravelGo-opt-tooltip">صرفه جویی</span></a> <a href="#"
+                                                                                                         class="TravelGo-js-booking"><i
+                                                    class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">مسیرها را پیدا کنید</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="swiper-slide h-auto px-2">
+                        <div class="listing-item ">
+                            <article class="TravelGo-category-listing fl-wrap">
+                                <div class="TravelGo-category-img"><a href="hotel-detailed.html"><img
+                                        src="images/cruises/6.jpg" alt=""></a>
+                                    <div class="TravelGo-category-opt">
+                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="5"><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                class="fa fa-star"></i></div>
+                                        <div class="rate-class-name">
+                                            <div class="score"><strong>بسیار خوب</strong> 27 بررسی</div>
+                                            <span>5.0</span></div>
+                                    </div>
+                                </div>
+                                <div class="TravelGo-category-content fl-wrap title-sin_item">
+                                    <div class="TravelGo-category-content-title fl-wrap">
+                                        <div class="TravelGo-category-content-title-item">
+                                            <h3 class="title-sin_map"><a href="hotel-detailed.html">کروز آسیا و
+                                                آفریقا</a></h3>
+                                            <div class="TravelGo-category-location fl-wrap"><a href="#"
+                                                                                               class="map-item"><i
+                                                    class="fas fa-map-marker-alt"></i>بیست و هفتم بروکلین نیویورک ، </a>
+                                                <span>200 تومان </span><a href="#"
+                                                                         class="map-item">آمریکا</a><span></span></div>
+                                        </div>
+                                    </div>
+                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                    <ul class="facilities-list fl-wrap">
+                                        <li><i class="fas fa-wifi"></i><span>وای فای رایگان</span></li>
+                                        <li><i class="fas fa-parking"></i><span>پارکینگ</span></li>
+                                        <li><i class="fas fa-smoking-ban"></i><span>اتاقهای غیر سیگاری</span></li>
+                                        <li><i class="fas fa-utensils"></i><span> رستوران</span></li>
+                                    </ul>
+                                    <div class="TravelGo-category-footer fl-wrap">
+                                        <div class="TravelGo-category-price btn-grad"><span>2 روز 3 شب</span></div>
+                                        <div class="TravelGo-opt-list"><a href="#" class="single-map-item"><i
+                                                class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">روی نقشه</span></a>
+                                            <a href="#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span
+                                                    class="TravelGo-opt-tooltip">صرفه جویی</span></a> <a href="#"
+                                                                                                         class="TravelGo-js-booking"><i
+                                                    class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">مسیرها را پیدا کنید</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination d-md-none"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="bg-light pt80 pb60 solutions">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto text-center mb-5">
+                <h2 class="title text-center">چرا ما را انتخاب کنید</h2>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+                <div class="shadow-hover h-100 bg-white px-5 pt-0 pb-5 text-center up-on-hover"><span
+                        class="alt-font text-light-gray display-2 font-italic opacity-2">1</span> <span
+                        class="d-block mb-4"><i class="fas fa-road display-2 text-grad"></i></span> <a class="h5"
+                                                                                                       href="#">رزرو راه
+                    آهن</a></div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+                <div class="shadow-hover h-100 bg-white px-5 pt-0 pb-5 text-center up-on-hover"><span
+                        class="alt-font text-light-gray display-2 font-italic opacity-2">2</span> <span
+                        class="d-block mb-4"><i class="fas fa-utensils display-2 text-grad"></i></span> <a class="h5"
+                                                                                                           href="#">رزرو
+                    هتل</a></div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+                <div class="shadow-hover h-100 bg-white px-5 pt-0 pb-5 text-center up-on-hover"><span
+                        class="alt-font text-light-gray display-2 font-italic opacity-2">3</span> <span
+                        class="d-block mb-4"><i class="fas fa-ticket-alt display-2 text-grad"></i></span> <a class="h5"
+                                                                                                             href="#">رزرو
+                    بلیط</a></div>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+                <div class="shadow-hover h-100 bg-white px-5 pt-0 pb-5 text-center up-on-hover"><span
+                        class="alt-font text-light-gray display-2 font-italic opacity-2">4</span> <span
+                        class="d-block mb-4"><i class="fas fa-child display-2 text-grad"></i></span> <a class="h5"
+                                                                                                        href="#">تور
+                    شگفت انگیز</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="pricing pricing-center whiteBG pb60">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-8 mx-auto mb-5">
+                <div class="title text-center">
+                    <h2> بسته های قیمت گذاری</h2>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- pricing item -->
+            <div class="col-md-4 mb-5">
+                <div class="pricing-box h-100">
+                    <h5>بسته ماه عسل</h5>
+                    <div class="plan-price"><span class="price text-grad"> <sup class="text-grad"></sup>20 <sup
+                            class="text-grad">تومان</sup></span> در روز
+                    </div>
+                    <p>4 شب در مجموعه هانی مون. <br>
+                        انتقال فرودگاه لوکس خصوصی. <br>
+                        صبحانه روزانه سوئیت خود را.</p>
+                    <a class="btn btn-outline-light mt-4" href="#!">اکنون سفارش دهید!</a></div>
+            </div>
+            <!-- pricing item -->
+            <div class="col-md-4 mb-5">
+                <div class="pricing-box h-100 shadow no-border box">
+                    <div class="ribbon"><span>محبوب</span></div>
+                    <h5>بسته خانواده</h5>
+                    <div class="plan-price"><span class="price text-grad"> <sup class="text-grad"></sup>50 <sup
+                            class="text-grad">تومان</sup></span> در روز
+                    </div>
+                    <p>4 شب در مجموعه هانی مون. <br>
+                        انتقال فرودگاه لوکس خصوصی. <br>
+                        صبحانه روزانه سوئیت خود را.</p>
+                    <a class="btn btn-grad mt-4" href="#!">اکنون سفارش دهید!</a></div>
+            </div>
+            <!-- pricing item -->
+            <div class="col-md-4 mb-5">
+                <div class="pricing-box h-100">
+                    <h5>همه فراگیر</h5>
+                    <div class="plan-price"><span class="price text-grad"> <sup class="text-grad"></sup>99 <sup
+                            class="text-grad">تومان</sup></span> در روز
+                    </div>
+                    <p>4 شب در مجموعه هانی مون. <br>
+                        انتقال فرودگاه لوکس خصوصی. <br>
+                        صبحانه روزانه سوئیت خود را.</p>
+                    <a class="btn btn-outline-light mt-4" href="#!">اکنون سفارش دهید!</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- =======================
+	newsletter -->
+<section class="bg-light pattern-overlay-1-dark">
+    <div class="container">
+        <div class="col-md-12 col-lg-9 mx-auto p-4 p-sm-5">
+            <div class="text-center px-0 px-sm-5">
+                <p class="mb-3 lead">21،215+ هتل و اقامتگاه های موجود!</p>
+                <form>
+                    <div class="input-group px-0 px-md-5">
+                        <input class="form-control border-radius-right-0 border-right-0 bg-transparent" type="text"
+                               name="search" placeholder="انتخاب مکان">
+                        <button type="button" class="btn btn-grad mb-0 border-radius-left-0"><span class=" d-md-block">اکنون جستجو کن</span>
+                            <span class="d-md-none"><i class="fab fa-paper-plane-o m-0"></i></span></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- =======================
+	newsletter -->
+
+<!-- =======================
+	footer  -->
+<footer class="footer footer-dark pt-6 position-relative">
+    <div class="footer-content">
+        <div class="container">
+            <div class="row">
+                <!-- Footer widget 1 -->
+                <div class="col-md-3 col-sm-6 order-sm-1">
+                    <div class="widget address"><a href="index.html" class="footer-logo mb-3 d-block">
+                        <!-- SVG Logo Start -->
+                        <img src="images/logo-footer.png">
+                        <!-- SVG Logo End -->
+                    </a>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                            است.</p>
+                    </div>
+                </div>
+                <!-- Footer widget 2 -->
+                <div class="col-md-2 col-sm-4 order-sm-3">
+                    <div class="widget">
+                        <h6>لینک های سریع</h6>
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link" href="#">در باره ما</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">  تماس با ما</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html">خانه</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">وبلاگ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">نمونه کارها</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Footer widget 3 -->
+                <div class="col-md-2 col-sm-4 order-sm-4">
+                    <div class="widget">
+                        <h6>شرکت</h6>
+                        <ul class="nav flex-column primary-hover">
+                            <li class="nav-item"><a class="nav-link" href="#">راهنمای خرید</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">مشاغل</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html">شرایط و ضوابط</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">سیاست حفظ حریم خصوصی</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">سؤالات متداول</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Footer widget 4 -->
+                <div class="col-md-2 col-sm-4 order-sm-5">
+                    <div class="widget">
+                        <h6>حمایت کردن</h6>
+                        <ul class="nav flex-column primary-hover">
+                            <li class="nav-item"><a class="nav-link" href="#">مستندات</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">دانش محور</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html">انجمن</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">پشتیبانی</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">شرایط استفاده</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Footer widget 5 -->
+                <div class="col-md-3 col-sm-6 order-sm-2">
+                    <div class="widget address">
+                        <ul class="list-unstyled">
+                            <li class="media mb-3"><i class="fas fa-map-marked-alt mr-3 display-8"></i>تهران-جردن-خیابان نیلوفر</li>
+                            <li class="media mb-3"><i class="mr-3 display-8 fas fa-headphones-alt"></i> 021-1234567
+                            </li>
+                            <li class="media mb-3"><i class="mr-3 display-8 far fa-envelope"></i> help@travelGo.com</li>
+                            <li class="media mb-3"><i class="mr-3 display-8 far fa-clock"></i>
+                                <p>شنبه - جمعه: <strong>09:00 - 21:00</strong> <br>
+                                    شنبه و جمعه: <strong>تعطیل است</strong></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="divider mt-3"></div>
+    <!--footer copyright -->
+    <div class="footer-copyright py-3">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center py-3 text-center text-md-left">
+                <!-- copyright text -->
+                <div class="copyright-text">© 2019 کلیه حقوق این سایت توسط <a href="#!">برو سفر</a> محفوظ است <a
+                        href="#!">.</a></div>
+                <!-- copyright links-->
+
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- =======================
+	footer  -->
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/popper.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/functions.html" type="text/javascript"></script>
+<script src="js/owl.carousel.min.js" type="text/javascript"></script>
+<script src="js/slick.js" type="text/javascript"></script>
+<script src="js/swiper.min.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+<script src="js/jquery.fancybox.min.js" type="text/javascript"></script>
+<script src="js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+<script src="js/jquery-ui.min.js" type="text/javascript"></script>
+</body>
+</html>
